@@ -15,3 +15,5 @@ highest_branch = np.argmax(total_per_branch) + 1  # +1 for human-friendly branch
 print("Branch with highest total transactions: Branch", highest_branch)
 average_volume = np.mean(transactions)
 print("Average monthly transaction volume (all branches):", average_volume)
+reshaped = transactions.reshape(3, 8)
+print("Reshaped 3x8 array:\n", reshaped)
