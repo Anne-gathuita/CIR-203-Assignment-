@@ -1,0 +1,26 @@
+# 1. Create a list of 10 delivery routes
+routes = [
+    "Nairobi-Westlands",
+    "Mombasa-CBD",
+    "Kisumu-Downtown",
+    "Nakuru-Industrial",
+    "Eldoret-Central",
+    "Thika-GarissaRoad",
+    "Naivasha-Lakeview",
+    "Kericho-GreenHills",
+    "Nyeri-TownCenter",
+    "Kitale-Market"
+]
+
+print("Initial routes:", routes)
+routes.append("Malindi-BeachRoad") 
+routes.remove("Kitale-Market")      
+print("Updated routes:", routes)
+routes.sort()
+print("Sorted routes:", routes)
+routes.reverse()
+print("Reversed routes:", routes)
+count_N = sum(route.startswith("N") for route in routes)
+print("Number of routes starting with N:", count_N)
+long_routes = [route for route in routes if len(route) > 10]
+print("Routes longer than 10 characters:", long_routes)
