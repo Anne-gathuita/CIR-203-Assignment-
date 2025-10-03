@@ -13,3 +13,5 @@ total_per_branch = np.sum(transactions, axis=1)
 print("Total transactions per branch:", total_per_branch)
 highest_branch = np.argmax(total_per_branch) + 1  # +1 for human-friendly branch numbering
 print("Branch with highest total transactions: Branch", highest_branch)
+average_volume = np.mean(transactions)
+print("Average monthly transaction volume (all branches):", average_volume)
