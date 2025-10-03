@@ -8,4 +8,5 @@ transactions = np.array([
     [900, 950, 1000, 1100, 1050, 1200]     # Branch 4
 ])
 
-print("Transaction Volumes:\n", transactions)
+print("Transaction Volumes:\n", transactions)highest_branch = np.argmax(total_per_branch) + 1  # +1 for human-friendly branch numbering
+print("Branch with highest total transactions: Branch", highest_branch)
