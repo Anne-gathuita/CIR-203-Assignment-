@@ -1,0 +1,11 @@
+import numpy as np
+
+# Transaction volumes (rows = branches, columns = months)
+transactions = np.array([
+    [1200, 1500, 1600, 1400, 1350, 1550],  # Branch 1
+    [1000, 1100, 1150, 1200, 1250, 1300],  # Branch 2
+    [1700, 1650, 1800, 1750, 1600, 1850],  # Branch 3
+    [900, 950, 1000, 1100, 1050, 1200]     # Branch 4
+])
+
+print("Transaction Volumes:\n", transactions)
