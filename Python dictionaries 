@@ -1,0 +1,29 @@
+# 1. Create a dictionary with 5 products and their stock quantities
+inventory = {
+    "Laptop": 15,
+    "Phone": 8,
+    "Headphones": 20,
+    "Charger": 5,
+    "Keyboard": 12
+}
+
+print("Initial Inventory:", inventory)
+inventory["Monitor"] = 10         # Adding a new product
+inventory["Phone"] = 18           # Updating existing quantity
+
+print("\nAfter Adding and Updating:", inventory)
+
+# Function to return products with stock less than 10
+def low_stock_products(inventory_dict):
+    return [product for product, qty in inventory_dict.items() if qty < 10]
+
+print("\nProducts with stock less than 10:", low_stock_products(inventory))
+
+#  Delete a discontinued product and display updated dictionary
+del inventory["Charger"]
+print("\nAfter Deleting 'Charger':", inventory)
+
+# Loop through using .items() and print product with quantity
+print("\nFinal Inventory List:")
+for product, qty in inventory.items():
+    print(f"{product}: {qty}")
