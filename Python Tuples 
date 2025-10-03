@@ -1,0 +1,23 @@
+# 1. Create a tuple for a patient
+patient = ("John Doe", 45, "120/80", 72)  
+print("Age:", patient[1])
+print("Heart Rate:", patient[3])
+
+# Why tuples are suitable?
+# Tuples are immutable, meaning the data cannot be accidentally changed.
+# Patient vitals are sensitive and should be protected from unintentional modifications.
+
+# Convert the tuple to a list, update the heart rate, and convert it back to a tuple
+patient_list = list(patient)
+patient_list[3] = 75   # update heart rate
+patient = tuple(patient_list)
+print("Updated patient record:", patient)
+patients = (
+    ("John Doe", 45, "120/80", 75),
+    ("Mary Jane", 50, "130/85", 80),
+    ("Peter Parker", 30, "110/70", 65),
+    ("Bruce Wayne", 42, "125/78", 72),
+    ("Clark Kent", 35, "118/76", 70)
+)
+names = [p[0] for p in patients]
+print("Patient Names:", names)
